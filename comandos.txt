@@ -1,0 +1,8 @@
+//transpilação
+tsc index.ts -> transpila do ts para o js
+
+//arquivo de configaração
+tsc --init
+
+//compilação automática
+tsc -w
