@@ -87,3 +87,27 @@ console.log(showCoords(coordObject));
 /*
 LITERAL TYPES
 */
+const showDirection = (direction) => {
+    return `A direção escolhida foi ${direction}`;
+};
+console.log(showDirection("center"));
+console.log(showDirection("left"));
+console.log(showDirection("right"));
+// console.log(showDirection('top')) => erro
+/*
+NON NULL ASSERTION OPERATORS
+*/
+const p = document.getElementById("someSpan");
+console.log(p.innerHTML); //operador '!' é utilizado para validar o erro quando sabemos que o valor existe
+/*
+BigInt só está disponível com o EStarget = ES2020
+*/
+const n = 10000n;
+console.log(n + 100n);
+/*
+Symbols => cria uma referência única para um determinado valor. mesma lógica do Ruby
+*/
+const symbolA = Symbol("Daniel");
+const symbolB = Symbol("Daniel");
+console.log(symbolA == symbolB);
+console.log(symbolA === symbolB);
